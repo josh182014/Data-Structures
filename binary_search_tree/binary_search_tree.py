@@ -1,8 +1,3 @@
-# from dll_queue import Queue
-# from dll_stack import Stack
-import sys
-sys.path.append('../queue_and_stack')
-
 # Questions:
 # Only ints?
 # Negative numbers?
