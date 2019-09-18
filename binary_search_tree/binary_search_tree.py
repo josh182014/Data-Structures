@@ -66,4 +66,8 @@ class BinarySearchTree:
     # the passed-in callback function on each tree node value. There is a myriad of ways to
     # perform tree traversal; in this case any of them should work.
     def for_each(self, cb):
-        print('hello', cb)
+        cb(self.value)
+        if self.right:
+            self.right.for_each(cb)
+        if self.left:
+            self.left.for_each(cb)
