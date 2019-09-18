@@ -51,8 +51,8 @@ class LRUCache:
             self.items[key] = current
             return
 
-        old_key = self.storage.remove_from_head()
+        previous = self.storage.remove_from_head()
         current = self.storage.add_to_tail(value, key)
-        del self.items[old_key]
+        del self.items[previous]
         self.items[key] = current
         return
