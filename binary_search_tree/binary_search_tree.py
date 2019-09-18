@@ -27,12 +27,12 @@ class BinarySearchTree:
             self.value = BinarySearchTree(value)
         else:
             if value >= self.value:
-                if self.right:
+                if self.right is not None:
                     self.right.insert(value)
                 else:
                     self.right = BinarySearchTree(value)
             elif value < self.value:
-                if self.left:
+                if self.left is not None:
                     self.left.insert(value)
                 else:
                     self.left = BinarySearchTree(value)
