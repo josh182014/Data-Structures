@@ -75,11 +75,11 @@ class BinarySearchTree:
         if self.left:
             self.left.for_each(cb)
 
-    # DAY 2 Project -----------------------
+# DAY 2 Project -----------------------
 
     # Print all the values in order from low to high
     # Hint:  Use a recursive, depth first traversal
-    def in_order_dft(self):
+    def in_order_dft(self, node):
         pass
 
     # Print the value of every node, starting with the given node,
