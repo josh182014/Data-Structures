@@ -111,15 +111,15 @@ class BinarySearchTree:
         if not node:
             return
 
-        stack = Stack()
-        stack.push(node)
-        while (stack.len() > 0):
-            node = stack.pop()
+        stack = []
+        stack.insert(0, node)
+        while (len(stack) > 0):
+            node = stack.pop(0)
             print(node.value)
             if node.left:
-                stack.push(node.left)
+                stack.insert(0, node.left)
             if node.right:
-                stack.push(node.right)
+                stack.insert(0, node.right)
 
     # STRETCH Goals -------------------------
     # Note: Research may be required
